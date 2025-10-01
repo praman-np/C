@@ -1,13 +1,13 @@
 #include<stdio.h>
 int main(){
-    int a,b;
+    int a;
+    int b;
     char op;
     printf("Enter two numbers:");
     scanf("%d",&a);
     scanf("%d",&b);
     printf("Enter your operator: +,-,*,/:");
     scanf("%s",&op);
-    printf("%d",b);
     if(op=='+'){
         int sum=a+b;
         printf("The sum of two no is:%d %c %d = %d",a,op,b,sum);
