@@ -22,12 +22,16 @@ int main(){
             printf("%f %c %f = %f",num1,optr,num2,res);
             break;
         case '/':
-            res=num1/num2;
-            printf("%f %c %f = %f",num1,optr,num2,res);
+            if(num2!=0){
+                res=num1/num2;
+                printf("%f %c %f = %f",num1,optr,num2,res);
+            }
+            else
+                printf("Error: Divison by 0");
             break;
         default:
             printf("Use vailt operator");
-            break;
+            return 1;
     }
     return 0;
 }
